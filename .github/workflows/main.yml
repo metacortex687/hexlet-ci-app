@@ -3,11 +3,11 @@ name: main
 on: push
 jobs:
   main-job:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-    - run: make setup
-    - run: make test
-    - run: make lint
+      - run: make setup
+      - run: make test
+      - run: make lint
 
